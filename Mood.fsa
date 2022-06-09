@@ -1,0 +1,101 @@
+FSA Event
+#Param Nearby=No MaxLen=Yes Order=No
+#Entry EntryEvent=[Cat=Event]
+
+Word=A0_XB&RHeaddep=sbj&GroupID=UChunk&ClauseID=UChunk EntryEvent
+{
+	print('R-A0')
+	UnitE=GetUnit(-1)
+	UnitA0=GetUnit(0)
+	FromE=GetUnitKV(UnitE,"From")
+	ToE=GetUnitKV(UnitE,"To")
+	FromA0=GetUnitKV(UnitA0,"From")
+	ToA0=GetUnitKV(UnitA0,"To")
+	WordA0=GetText(FromA0,ToA0)
+	print('WordA0',WordA0)
+	WordE=GetText(FromE,ToE)
+	print('WordE',WordE)
+	AddRelation(UnitE,UnitA0,'A0')
+	KVs = GetTableKVs("A0_"..WordE,WordA0,'Cat')
+	for i=1,#KVs do
+		print(KVs[i])
+		AddUnitKV(UnitA0,'Cat',KVs[i])
+		AddRelationKV(UnitE,UnitA0,'A0','Cat',KVs[i])
+	end
+}
+
+Word=A1_XB EntryEvent
+{
+	print('R-A1')
+	UnitE=GetUnit(-1)
+	UnitA1=GetUnit(0)
+	FromE=GetUnitKV(UnitE,"From")
+	ToE=GetUnitKV(UnitE,"To")
+	FromA1=GetUnitKV(UnitA1,"From")
+	ToA1=GetUnitKV(UnitA1,"To")
+	WordA1=GetText(FromA1,ToA1)
+	print('WordA1',WordA1)
+	WordE=GetText(FromE,ToE)
+	print('WordE',WordE)
+	AddRelation(UnitE,UnitA1,'A1')
+	KVs = GetTableKVs("A1_"..WordE,WordA1,'Cat')
+	for i=1,#KVs do
+		print(KVs[i])
+		AddUnitKV(UnitA1,'Cat',KVs[i])
+		AddRelationKV(UnitE,UnitA1,'A1','Cat',KVs[i])
+	end
+}
+
+Word=Mod_XB&RHeaddep=mod&GroupID=UChunk&ClauseID=UChunk EntryEvent
+{
+	print('R-Mod')
+		
+	UnitE=GetUnit(-1)
+	UnitMod=GetUnit(0)
+	FromE=GetUnitKV(UnitE,"From")
+	ToE=GetUnitKV(UnitE,"To")
+	FromMod=GetUnitKV(UnitMod,"From")
+	ToMod=GetUnitKV(UnitMod,"To")
+	WordMod=GetText(FromMod,ToMod)
+	print('WordMod',WordMod)
+	WordE=GetText(FromE,ToE)
+	print('WordE',WordE)
+	AddRelation(UnitE,UnitMod,'Mod')
+	KVs = GetTableKVs("Mod_"..WordE,WordMod,'Mood')
+	for i=1,#KVs do
+		print(KVs[i])
+		AddUnitKV(UnitMod,'Mood',KVs[i])
+		AddRelationKV(UnitE,UnitMod,'Mod','Mood',KVs[i])
+	end
+
+}
+
+Word=Frame_XB EntryEvent
+{
+	print('R-Frame')
+		
+	UnitE=GetUnit(-1)
+	UnitFrame=GetUnit(0)
+	FromE=GetUnitKV(UnitE,"From")
+	ToE=GetUnitKV(UnitE,"To")
+	FromFrame=GetUnitKV(UnitFrame,"From")
+	ToFrame=GetUnitKV(UnitFrame,"To")
+	WordFrame=GetText(FromFrame,ToFrame)
+	print('WordFrame',WordFrame)
+	WordE=GetText(FromE,ToE)
+	print('WordE',WordE)
+	
+	Words=GetText(ToFrame+1,FromE-1)
+	print(Words)
+	WordsNo=AddUnit(ToFrame+1,Words)
+	print(WordsNo)
+	print("Frame_"..WordE,WordFrame,'Mood')
+	
+	KVs = GetTableKVs("Frame_"..WordE,WordFrame,'Mood')
+	for i=1,#KVs do
+		print(KVs[i])
+		AddRelation(UnitE,WordsNo,'Fram')
+		AddUnitKV(WordsNo,'Mood',KVs[i])
+		AddRelationKV(UnitE,WordsNo,'Fram','Mood',KVs[i])
+	end
+}
