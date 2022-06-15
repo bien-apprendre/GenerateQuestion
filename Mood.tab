@@ -1,0 +1,382 @@
+Table Tab_Event
+表演 Cat=Event Role=[A0 A1 Mod RF Place Neighbor Tools Time Golas]
+喜欢 Cat=Event Role=[A0 A1 Mod]
+诚实 Cat=Event Role=[A0 A1 Mod]
+怀疑 Cat=Event Role=[A0 A1 Mod]
+购买 Cat=Event Role=[A0 A1 Mod]
+看见 Cat=Event Role=[A0 A1 Mod]
+开心 Cat=Event Role=[A0 A1 Mod]
+需要 Cat=Event Role=[A0 A1 Mod]
+睡觉 Cat=Event Role=[A0 Mod]
+吃 Cat=Event Role=[A0 A1 Mod Tools]
+散步 Cat=Event Role=[A0 Mod]
+上课 Cat=Event Role=[A0 Mod]
+起飞 Cat=Event Role=[A0 Mod]
+死亡 Cat=Event Role=[A0 Mod]
+
+Table A0_表演
+我 Cat=people
+你 Cat=people
+他 Cat=people
+人 Cat=people
+儿子 Cat=people
+男生 Cat=people
+他们 Cat=people
+我们 Cat=people
+大家 Cat=people
+罗兰 Cat=people
+孩子们 Cat=people
+队员们 Cat=people
+留学生 Cat=people
+小花 Cat=people
+
+Table A1_表演
+节目 Cat=Entity
+歌舞 Cat=Entity
+技术 Cat=Entity
+太极拳 Cat=Entity
+相声 Cat=Entity
+
+Table Mod_表演
+上午 Mood=Time
+晚上 Mood=Time
+当时 Mood=Time
+明天 Mood=Time
+第二天 Mood=Time
+线上 Mood=Manner
+
+Table RF_表演
+时候 Mood=Time
+上 Mood=Time
+
+Table Frame_表演
+在 Mood=Place
+跟 Mood=Neighbor
+用 Mood=Tools
+为 Mood=Golas
+由 Role=A0
+
+Table Tools_表演
+中文 Cat=Entity
+
+Table Neighbor_表演
+我 Cat=people
+
+Table Place_表演
+学校 Mood=Place
+家里 Mood=Place
+
+Table A0_死亡
+小兵 Cat=people
+
+Table Mod_死亡
+已经 Mood=Done
+窒息 Mood=Reason
+
+Table Reason_死亡
+窒息 Mood=Reason
+
+Table A0_起飞
+飞机 Cat=Entity
+
+Table Mod_起飞
+明天 Mood=Time
+
+Table A0_喜欢
+我 Cat=people
+你 Cat=people
+他 Cat=people
+人 Cat=people
+儿子 Cat=people
+男生 Cat=people
+我们 Cat=people
+大家 Cat=people
+罗兰 Cat=people
+孩子们 Cat=people
+队员们 Cat=people
+留学生 Cat=people
+
+
+Table A1_喜欢
+歌舞 Cat=Entity
+技术 Cat=Entity
+太极拳 Cat=Entity
+相声 Cat=Entity
+郭德纲 Cat=people
+音乐 Cat=Entity
+
+
+Table Mod_喜欢
+非常 Mood=Degree
+不 Mood=Deny
+以前 Mood=Time
+
+Table A0_诚实
+你 Cat=people
+他 Cat=people
+人 Cat=people
+儿子 Cat=people
+男生 Cat=people
+他们 Cat=people
+我们 Cat=people
+大家 Cat=people
+罗兰 Cat=people
+孩子们 Cat=people
+队员们 Cat=people
+留学生 Cat=people
+
+Table Mod_诚实
+上午 Mood=Time
+晚上 Mood=Time
+当时 Mood=Time
+明天 Mood=Time
+第二天 Mood=Time
+很 Mood=Degree
+
+Table A0_怀疑
+你 Cat=people
+他 Cat=people
+人 Cat=people
+儿子 Cat=people
+男生 Cat=people
+他们 Cat=people
+我们 Cat=people
+大家 Cat=people
+罗兰 Cat=people
+孩子们 Cat=people
+队员们 Cat=people
+留学生 Cat=people
+
+Table A1_怀疑
+他 Cat=people
+节目 Cat=Entity
+歌舞 Cat=Entity
+技术 Cat=Entity
+太极拳 Cat=Entity
+相声 Cat=Entity
+
+Table Mod_怀疑
+上午 Mood=Time
+晚上 Mood=Time
+当时 Mood=Time
+明天 Mood=Time
+第二天 Mood=Time
+
+Table A0_购买
+你 Cat=people
+他 Cat=people
+人 Cat=people
+儿子 Cat=people
+男生 Cat=people
+他们 Cat=people
+我们 Cat=people
+大家 Cat=people
+罗兰 Cat=people
+孩子们 Cat=people
+队员们 Cat=people
+留学生 Cat=people
+
+Table Mod_购买
+上午 Mood=Time
+晚上 Mood=Time
+当时 Mood=Time
+明天 Mood=Time
+第二天 Mood=Time
+
+Table A1_购买
+电池 Cat=Entity
+书籍 Cat=Entity
+电脑 Cat=Entity
+手机 Cat=Entity
+零食 Cat=Entity
+
+Table A0_散步
+你 Cat=people
+他 Cat=people
+人 Cat=people
+儿子 Cat=people
+男生 Cat=people
+他们 Cat=people
+我们 Cat=people
+大家 Cat=people
+罗兰 Cat=people
+孩子们 Cat=people
+队员们 Cat=people
+留学生 Cat=people
+
+Table Mod_散步
+上午 Mood=Time
+晚上 Mood=Time
+当时 Mood=Time
+明天 Mood=Time
+第二天 Mood=Time
+
+Table A0_上课
+你 Cat=people
+他 Cat=people
+人 Cat=people
+儿子 Cat=people
+男生 Cat=people
+他们 Cat=people
+我们 Cat=people
+大家 Cat=people
+罗兰 Cat=people
+孩子们 Cat=people
+队员们 Cat=people
+留学生 Cat=people
+
+Table Mod_上课
+上午 Mood=Time
+晚上 Mood=Time
+当时 Mood=Time
+明天 Mood=Time
+第二天 Mood=Time
+
+Table A0_看见
+你 Cat=people
+他 Cat=people
+人 Cat=people
+儿子 Cat=people
+男生 Cat=people
+他们 Cat=people
+我们 Cat=people
+大家 Cat=people
+罗兰 Cat=people
+孩子们 Cat=people
+队员们 Cat=people
+留学生 Cat=people
+
+Table Mod_看见
+上午 Mood=Time
+晚上 Mood=Time
+当时 Mood=Time
+明天 Mood=Time
+第二天 Mood=Time
+
+Table A1_看见
+你 Cat=people
+他 Cat=people
+人 Cat=people
+儿子 Cat=people
+男生 Cat=people
+他们 Cat=people
+我们 Cat=people
+大家 Cat=people
+罗兰 Cat=people
+孩子们 Cat=people
+队员们 Cat=people
+留学生 Cat=people
+
+Table A0_开心
+你 Cat=people
+他 Cat=people
+人 Cat=people
+儿子 Cat=people
+男生 Cat=people
+他们 Cat=people
+我们 Cat=people
+大家 Cat=people
+罗兰 Cat=people
+孩子们 Cat=people
+队员们 Cat=people
+留学生 Cat=people
+
+Table Mod_开心
+非常 Mood=Degree
+很 Mood=Degree
+晚上 Mood=Time
+今天 Mood=Time
+
+Table A0_吃
+我 Cat=people
+你 Cat=people
+他 Cat=people
+人 Cat=people
+儿子 Cat=people
+男生 Cat=people
+他们 Cat=people
+我们 Cat=people
+大家 Cat=people
+罗兰 Cat=people
+孩子们 Cat=people
+队员们 Cat=people
+留学生 Cat=people
+小花 Cat=people
+
+Table A1_吃
+饭 Cat=Entity
+零食 Cat=Entity
+汉堡 Cat=Entity
+饺子 Cat=Entity
+馒头 Cat=Entity
+海鲜 Cat=Entity
+
+Table Mod_吃
+上午 Mood=Time
+晚上 Mood=Time
+当时 Mood=Time
+明天 Mood=Time
+第二天 Mood=Time
+线上 Mood=Manner
+
+Table Frame_吃
+在 Mood=Place
+跟 Mood=Neighbor
+用 Mood=Tools
+为 Mood=MuDi
+由 Role=A0
+
+Table Tools_吃
+瓷碗 Cat=Entity
+手 Cat=Entity
+
+Table Place_吃
+学校 Mood=Place
+食堂 Mood=Place
+家里 Mood=Place
+饭店 Mood=Place
+
+Table A0_睡觉
+你 Cat=people
+他 Cat=people
+人 Cat=people
+儿子 Cat=people
+男生 Cat=people
+他们 Cat=people
+我们 Cat=people
+大家 Cat=people
+罗兰 Cat=people
+孩子们 Cat=people
+队员们 Cat=people
+留学生 Cat=people
+
+Table Mod_睡觉
+非常 Mood=Degree
+很 Mood=Degree
+晚上 Mood=Time
+今天 Mood=Time
+
+Table Frame_睡觉
+在 Mood=Place
+跟 Mood=Neighbor
+用 Mood=Tools
+为 Mood=MuDi
+由 Role=A0
+
+Table Place_睡觉
+学校 Mood=Place
+宿舍 Mood=Place
+家里 Mood=Place
+寝室 Mood=Place
+
+Table A0_需要
+你 Cat=people
+他 Cat=people
+人 Cat=people
+
+Table A1_需要
+热情 Cat=Entity
+活力 Cat=Entity
+
+Table Mod_需要
+非常 Mood=Degree
