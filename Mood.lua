@@ -27,25 +27,25 @@ local function GenerateQuestion()
 			for i=1,#KVs do
 				TypeWord = KVs[i]
 				if TypeWord=="people" then
-					Question = 'Ë­'..Words..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',A0)
+					Question = 'è°'..Words..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',A0)
 				elseif TypeWord=="nr" then
-					Question = 'Ë­'..Words..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',A0)
+					Question = 'è°'..Words..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',A0)
 				elseif TypeWord=="r" then
-					Question = 'Ë­'..Words..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',A0)
+					Question = 'è°'..Words..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',A0)
 				elseif TypeWord=="ns" then
-					Question = 'ÄÄÀï'..Words..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',A0)
+					Question = 'å“ªé‡Œ'..Words..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',A0)
 				else
-					Question = 'Ê²Ã´'..Words..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',A0)
+					Question = 'ä»€ä¹ˆ'..Words..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',A0)
 				end
 			end
 		elseif RoleType == 'A1' then
@@ -57,25 +57,25 @@ local function GenerateQuestion()
 			for i=1,#KVs do
 				TypeWord = KVs[i]
 				if TypeWord=="people" then
-					Question = Words..'Ë­£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',A1)
+					Question = Words..'è°ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',A1)
 				elseif TypeWord=="nr" then
-					Question = Words..'Ë­£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',A1)
+					Question = Words..'è°ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',A1)
 				elseif TypeWord=="r" then
-					Question = Words..'Ë­£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',A1)
+					Question = Words..'è°ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',A1)
 				elseif TypeWord=="ns" then
-					Question = Words..'ÄÄÀï£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',A1)
+					Question = Words..'å“ªé‡Œï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',A1)
 				else
-					Question = Words..'Ê²Ã´£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',A1)
+					Question = Words..'ä»€ä¹ˆï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',A1)
 				end
 			end
 		elseif RoleType == 'Mod' then
@@ -89,37 +89,37 @@ local function GenerateQuestion()
 			for i=1,#KVs do
 				TypeWord = KVs[i]
 				if TypeWord=="Time" then
-					Question = PreWords..'Ê²Ã´Ê±ºò'..LastWords..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = PreWords..'ä»€ä¹ˆæ—¶å€™'..LastWords..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				elseif TypeWord=="Degree" then
-					Question = PreWords..'ÓĞ¶à'..LastWords..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = PreWords..'æœ‰å¤š'..LastWords..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				elseif TypeWord=="Number" then
-					Question = PreWords..'ÓĞ¶àÉÙ'..LastWords..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = PreWords..'æœ‰å¤šå°‘'..LastWords..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				elseif TypeWord=="Scope" then
-					Question = PreWords..'Ê²Ã´·¶Î§'..LastWords..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = PreWords..'ä»€ä¹ˆèŒƒå›´'..LastWords..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				elseif TypeWord=="Manner" then
-					Question = PreWords..'ÔõÃ´Ñù'..LastWords..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = PreWords..'æ€ä¹ˆæ ·'..LastWords..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				elseif TypeWord=="Reason" then
-					Question = PreWords..'ÔõÃ´'..LastWords..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = PreWords..'æ€ä¹ˆ'..LastWords..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				elseif TypeWord=="Reason" then
-					Question = PreWords..'ÒòÎªÊ²Ã´'..LastWords..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = PreWords..'å› ä¸ºä»€ä¹ˆ'..LastWords..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				else
-					Question = Words..'Ê²Ã´£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = Words..'ä»€ä¹ˆï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				end
 			end
 		elseif RoleType == 'Fram' then
@@ -133,64 +133,62 @@ local function GenerateQuestion()
 			for i=1,#KVs do
 				TypeWord = KVs[i]
 				if TypeWord=="Place" then
-					Question = PreWords..'ÔÚÄÄÀï'..LastWords..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = PreWords..'åœ¨å“ªé‡Œ'..LastWords..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				elseif TypeWord=="Neighbor" then
-					Question = PreWords..'¸úË­'..LastWords..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = PreWords..'è·Ÿè°'..LastWords..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				elseif TypeWord=="Materials" then
-					Question = PreWords..'ÓÃÊ²Ã´'..LastWords..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = PreWords..'ç”¨ä»€ä¹ˆ'..LastWords..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				elseif TypeWord=="Tools" then
-					Question = PreWords..'ÓÃÊ²Ã´'..LastWords..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = PreWords..'ç”¨ä»€ä¹ˆ'..LastWords..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				elseif TypeWord=="Reason" then
-					Question = PreWords..'ÒòÎªÊ²Ã´'..LastWords..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = PreWords..'å› ä¸ºä»€ä¹ˆ'..LastWords..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				elseif TypeWord=="Purpose" then
-					Question = PreWords..'ÎªÁËÊ²Ã´'..LastWords..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = PreWords..'ä¸ºäº†ä»€ä¹ˆ'..LastWords..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				elseif TypeWord=="Source" then
-					Question = PreWords..'´ÓÄÄÀï'..LastWords..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = PreWords..'ä»å“ªé‡Œ'..LastWords..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				elseif TypeWord=="Golas" then
-					Question = PreWords..'ÎªË­'..LastWords..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = PreWords..'ä¸ºè°'..LastWords..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				elseif TypeWord=="Foundation" then
-					Question = PreWords..'ÒÀ¾İÊ²Ã´'..LastWords..'£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = PreWords..'ä¾æ®ä»€ä¹ˆ'..LastWords..'ï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				else
-					Question = Words..'Ê²Ã´£¿'
-					print('ÎÊÌâ£º',Question)
-					print('´ğ°¸£º',Mod)
+					Question = Words..'ä»€ä¹ˆï¼Ÿ'
+					print('é—®é¢˜ï¼š',Question)
+					print('ç­”æ¡ˆï¼š',Mod)
 				end
 			end
 		end
     end
 end
 
-local function Demo(Inp,Out)
+local function Demo(Inp)
     IN = io.open(Inp ,"r")
     local Line = IN:read("*l") 
     while(Line ~= nil)
     do
 		Mood(Line)
 		GenerateQuestion()
-		-- module.PrintLog()
-		-- module.PrintUnit()
         Line = IN:read("*l") 
     end
     io.close(IN)
 end
 
 
-Demo("Input.txt","ret.txt")
+Demo("Input.txt")
